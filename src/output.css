@@ -8,6 +8,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-sky-200: oklch(90.1% 0.058 230.902);
     --color-sky-300: oklch(82.8% 0.111 230.318);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-white: #fff;
@@ -267,11 +268,17 @@
   .mb-\[10px\] {
     margin-bottom: 10px;
   }
+  .mb-\[20px\] {
+    margin-bottom: 20px;
+  }
   .mb-\[26px\] {
     margin-bottom: 26px;
   }
   .mb-\[42px\] {
     margin-bottom: 42px;
+  }
+  .mb-\[50px\] {
+    margin-bottom: 50px;
   }
   .flex {
     display: flex;
@@ -302,6 +309,9 @@
   }
   .min-h-\[288px\] {
     min-height: 288px;
+  }
+  .min-h-\[400px\] {
+    min-height: 400px;
   }
   .w-2\/3 {
     width: calc(2/3 * 100%);
@@ -342,6 +352,9 @@
   .max-w-\[300px\] {
     max-width: 300px;
   }
+  .max-w-\[320px\] {
+    max-width: 320px;
+  }
   .max-w-\[680px\] {
     max-width: 680px;
   }
@@ -380,6 +393,9 @@
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
+  }
+  .gap-\[30px\] {
+    gap: 30px;
   }
   .gap-x-2 {
     column-gap: calc(var(--spacing) * 2);
@@ -482,6 +498,9 @@
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
+  }
+  .p-15 {
+    padding: calc(var(--spacing) * 15);
   }
   .p-\[30px\] {
     padding: 30px;
@@ -624,6 +643,9 @@
   }
   .text-secondary {
     color: var(--color-secondary);
+  }
+  .text-sky-200 {
+    color: var(--color-sky-200);
   }
   .text-sky-300 {
     color: var(--color-sky-300);
@@ -843,6 +865,11 @@
       max-width: var(--container-xl);
     }
   }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
   .lg\:relative {
     @media (width >= 64rem) {
       position: relative;
@@ -1027,6 +1054,11 @@
   .xl\:py-20 {
     @media (width >= 80rem) {
       padding-block: calc(var(--spacing) * 20);
+    }
+  }
+  .xl\:py-\[100px\] {
+    @media (width >= 80rem) {
+      padding-block: 100px;
     }
   }
   .xl\:py-\[150px\] {
