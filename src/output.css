@@ -209,6 +209,9 @@
   .-right-full {
     right: -100%;
   }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
   .-bottom-\[86px\] {
     bottom: calc(86px * -1);
   }
@@ -223,6 +226,9 @@
   }
   .-z-10 {
     z-index: calc(10 * -1);
+  }
+  .z-10 {
+    z-index: 10;
   }
   .z-20 {
     z-index: 20;
@@ -526,6 +532,9 @@
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
+  .border-white {
+    border-color: var(--color-white);
+  }
   .bg-DEFAULT {
     background-color: var(--color-DEFAULT);
   }
@@ -633,6 +642,9 @@
   }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
+  }
+  .pl-\[30px\] {
+    padding-left: 30px;
   }
   .text-center {
     text-align: center;
@@ -830,6 +842,11 @@
       color: var(--color-secondary);
     }
   }
+  .placeholder\:text-white {
+    &::placeholder {
+      color: var(--color-white);
+    }
+  }
   .placeholder\:italic {
     &::placeholder {
       font-style: italic;
@@ -946,6 +963,16 @@
       }
     }
   }
+  .hover\:bg-white\/90 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in srgb, #fff 90%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-white) 90%, transparent);
+        }
+      }
+    }
+  }
   .hover\:text-DEFAULT {
     &:hover {
       @media (hover: hover) {
@@ -976,6 +1003,21 @@
       border-color: var(--color-DEFAULT);
     }
   }
+  .focus\:text-white {
+    &:focus {
+      color: var(--color-white);
+    }
+  }
+  .md\:absolute {
+    @media (width >= 48rem) {
+      position: absolute;
+    }
+  }
+  .md\:h-\[444px\] {
+    @media (width >= 48rem) {
+      height: 444px;
+    }
+  }
   .md\:max-w-xl {
     @media (width >= 48rem) {
       max-width: var(--container-xl);
@@ -984,6 +1026,11 @@
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
+    }
+  }
+  .md\:text-left {
+    @media (width >= 48rem) {
+      text-align: left;
     }
   }
   .lg\:relative {
@@ -1034,6 +1081,11 @@
   .lg\:gap-x-10 {
     @media (width >= 64rem) {
       column-gap: calc(var(--spacing) * 10);
+    }
+  }
+  .lg\:gap-x-\[50px\] {
+    @media (width >= 64rem) {
+      column-gap: 50px;
     }
   }
   .lg\:gap-y-0 {
