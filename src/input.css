@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+
+@theme{
+    --font-poppins: "poppins", sans-serif;
+   --color-primary:#242a2b;
+    --color-grayy: #e8f0f1;
+    --color-DEFAULT: #1cbccf;
+    --color-secondary: #808080;
+    --color-tertiary: #90c6cd;
+    --shadow-custom1: 0px 2px 40px 0px rgba(8, 70, 78, 0.08);
+    --shadow-custom2: 0px 2px 30px 0px rgba(8, 73, 81, 0.06);
+
+}
+
+.faq__item.open.faq__answer{
+    @apply h-full;
+}
