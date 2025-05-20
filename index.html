@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./src/output.css" rel="stylesheet">
-    
+     <link rel="stylesheet" href="./src/swiper-bundle.min.css">
     <!-- نصب ایکون از سایت jsdelivr&remixicon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
     <!-- نصب ایکون از سایت jsdelivr&remixicon -->
@@ -390,11 +390,94 @@
 
 
     </section>
+<!-- testimonials -->
+    <section
+        class="testimonial bg-[url(/assets/img/testimonials/bg.svg)] bg-cover bg-right bg-no-repeat py-12 xl:min-h-[595px] xl:py-0">
 
+        <div class="testimonial__constainer  container mx-auto">
+
+            <div class="flex flex-col xl:flex-row gap-x-14 items-center">
+                <!-- img -->
+                <div class="hidden xl:flex">
+                    <img src="./assets/img/testimonials/img.png" alt="">
+                </div>
+                <!-- slider -->
+                <div class="max-w-[98%] xl:max-w-[710px]">
+                    <div class="swiper mySwiper h-[400px]">
+                        <div class="swiper-wrapper">
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide">
+                                <div class="h-full flex flex-col justify-center items-start">
+                                    <div class="max-w-[680px] mx-auto text-center xl:text-left">
+                                        <!-- massage -->
+                                        <p
+                                            class="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left mb-7
+                                 before:bg-[url(/assets/icons/testimonials/quote-left.svg)] before:bg-bottom brfore:bg-contain before:bg-no-repeat before:top-0 before:inline-block before:w-10 before:h-10
+                                 after:bg-[url(/assets/icons/testimonials/quote-right.svg)] after:bg-bottom after:bg-contain after:bg-no-repeat after:top-0 after:inline-block after:w-10 after:h-10">
+
+                                            <span class="mx-2">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Earum, quibusdam consequatur
+                                                soluta iure quidem porro hic eos a voluptas,
+                                                repellendus perferendis
+                                                .</span>
+                                        </p>
+                                        <!-- name -->
+                                        <div class="text-[26px] text-[#4c5354] font-semibold">James rodrigo</div>
+                                        <!-- job -->
+                                        <div class="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">Customer
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide">
+                                <div class="h-full flex flex-col justify-center items-start">
+                                    <div class="max-w-[680px] mx-auto text-center xl:text-left">
+                                        <!-- massage -->
+                                        <p
+                                            class="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left mb-7
+                                 before:bg-[url(/assets/icons/testimonials/quote-left.svg)] before:bg-bottom brfore:bg-contain before:bg-no-repeat before:top-0 before:inline-block before:w-10 before:h-10
+                                 after:bg-[url(/assets/icons/testimonials/quote-right.svg)] after:bg-bottom after:bg-contain after:bg-no-repeat after:top-0 after:inline-block after:w-10 after:h-10">
+
+                                            <span class="mx-2">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Earum, quibusdam consequatur
+                                                soluta iure quidem porro hic eos a voluptas,
+                                                repellendus perferendis
+                                                .</span>
+                                        </p>
+                                        <!-- name -->
+                                        <div class="text-[26px] text-[#4c5354] font-semibold">James rodrigo</div>
+                                        <!-- job -->
+                                        <div class="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">Customer
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+        </div>
+        </div>
+    </section>
+    <!--end testimonials -->
 
       <!-- script -->
     <script src="./src/.js/main.js"></script>
     <!-- script -->
+    <script src="./src/.js/swiper-bundle.min.js"></script>
     
     <!-- Initialize Swiper -->
     <script>
