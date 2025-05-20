@@ -18,7 +18,20 @@ if(mobileNav.classList.contains(navClosedClass)){
 });
 
 
+// script faq
 
+const fagItems = document.querySelectorA1l('.faq__item');
+fagItems.forEach((item) => {
+
+const faqBtn = item.querySelector('.faq__btn');
+item.addEventListener('click',() => {
+const isOpen = item.ClassList.toggle('open');
+const iconClass = isOpen ? 'ri-subtract-line' : 'ri-add-line';
+const iconElement = fagBtn.querySelector('i');
+iconElement.classList = '${iconClass} text-2xl';
+});
+
+});
 
 
 

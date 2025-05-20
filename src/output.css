@@ -15,6 +15,7 @@
     --spacing: 0.25rem;
     --container-xl: 36rem;
     --container-2xl: 42rem;
+    --container-5xl: 64rem;
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
     --text-2xl: 1.5rem;
@@ -259,6 +260,9 @@
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
+  .mt-15 {
+    margin-top: calc(var(--spacing) * 15);
+  }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
@@ -288,6 +292,9 @@
   }
   .hidden {
     display: none;
+  }
+  .h-0 {
+    height: calc(var(--spacing) * 0);
   }
   .h-8 {
     height: calc(var(--spacing) * 8);
@@ -345,6 +352,9 @@
   }
   .max-w-2xl {
     max-width: var(--container-2xl);
+  }
+  .max-w-5xl {
+    max-width: var(--container-5xl);
   }
   .max-w-\[98\%\] {
     max-width: 98%;
@@ -456,6 +466,10 @@
     border-right-style: var(--tw-border-style);
     border-right-width: 1px;
   }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
   .border-b-2 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 2px;
@@ -502,6 +516,9 @@
   .p-15 {
     padding: calc(var(--spacing) * 15);
   }
+  .p-20 {
+    padding: calc(var(--spacing) * 20);
+  }
   .p-\[30px\] {
     padding: 30px;
   }
@@ -532,6 +549,9 @@
   .px-\[20px\] {
     padding-inline: 20px;
   }
+  .px-\[30px\] {
+    padding-inline: 30px;
+  }
   .px-\[50px\] {
     padding-inline: 50px;
   }
@@ -547,8 +567,14 @@
   .py-\[10px\] {
     padding-block: 10px;
   }
+  .pt-7 {
+    padding-top: calc(var(--spacing) * 7);
+  }
   .pr-4 {
     padding-right: calc(var(--spacing) * 4);
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
   }
   .text-center {
     text-align: center;
@@ -693,6 +719,10 @@
   .outline-none {
     --tw-outline-style: none;
     outline-style: none;
+  }
+  .select-none {
+    -webkit-user-select: none;
+    user-select: none;
   }
   .backface-hidden {
     backface-visibility: hidden;
@@ -1013,6 +1043,11 @@
   .xl\:flex-row {
     @media (width >= 80rem) {
       flex-direction: row;
+    }
+  }
+  .xl\:items-center {
+    @media (width >= 80rem) {
+      align-items: center;
     }
   }
   .xl\:items-start {
