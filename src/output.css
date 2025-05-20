@@ -278,6 +278,9 @@
   .mb-\[26px\] {
     margin-bottom: 26px;
   }
+  .mb-\[36px\] {
+    margin-bottom: 36px;
+  }
   .mb-\[42px\] {
     margin-bottom: 42px;
   }
@@ -319,6 +322,9 @@
   }
   .min-h-\[400px\] {
     min-height: 400px;
+  }
+  .min-h-\[588px\] {
+    min-height: 588px;
   }
   .w-2\/3 {
     width: calc(2/3 * 100%);
@@ -364,6 +370,9 @@
   }
   .max-w-\[320px\] {
     max-width: 320px;
+  }
+  .max-w-\[555px\] {
+    max-width: 555px;
   }
   .max-w-\[680px\] {
     max-width: 680px;
@@ -434,6 +443,9 @@
   .gap-y-12 {
     row-gap: calc(var(--spacing) * 12);
   }
+  .gap-y-\[30px\] {
+    row-gap: 30px;
+  }
   .self-end {
     align-self: flex-end;
   }
@@ -480,6 +492,9 @@
   .border-\[\#dbdfdf\] {
     border-color: #dbdfdf;
   }
+  .border-\[\#dcdcdc\] {
+    border-color: #dcdcdc;
+  }
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
@@ -501,11 +516,17 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-\[url\(\/assets\/img\/departments\/bg\.svg\)\] {
+    background-image: url(/assets/img/departments/bg.svg);
+  }
   .bg-\[url\(\/assets\/img\/testimonials\/bg\.svg\)\] {
     background-image: url(/assets/img/testimonials/bg.svg);
   }
   .bg-cover {
     background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
   }
   .bg-right {
     background-position: right;
@@ -589,6 +610,10 @@
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
   }
   .text-\[17px\] {
     font-size: 17px;
@@ -985,6 +1010,11 @@
       margin-top: calc(144px * -1);
     }
   }
+  .xl\:mb-0 {
+    @media (width >= 80rem) {
+      margin-bottom: calc(var(--spacing) * 0);
+    }
+  }
   .xl\:mb-2 {
     @media (width >= 80rem) {
       margin-bottom: calc(var(--spacing) * 2);
@@ -1025,6 +1055,16 @@
       width: 48%;
     }
   }
+  .xl\:w-\[310px\] {
+    @media (width >= 80rem) {
+      width: 310px;
+    }
+  }
+  .xl\:w-\[640px\] {
+    @media (width >= 80rem) {
+      width: 640px;
+    }
+  }
   .xl\:max-w-\[710px\] {
     @media (width >= 80rem) {
       max-width: 710px;
@@ -1060,10 +1100,20 @@
       justify-content: space-between;
     }
   }
+  .xl\:gap-y-\[40px\] {
+    @media (width >= 80rem) {
+      row-gap: 40px;
+    }
+  }
   .xl\:border-r {
     @media (width >= 80rem) {
       border-right-style: var(--tw-border-style);
       border-right-width: 1px;
+    }
+  }
+  .xl\:bg-auto {
+    @media (width >= 80rem) {
+      background-size: auto;
     }
   }
   .xl\:px-0 {
@@ -1101,6 +1151,11 @@
       padding-block: 150px;
     }
   }
+  .xl\:pt-3 {
+    @media (width >= 80rem) {
+      padding-top: calc(var(--spacing) * 3);
+    }
+  }
   .xl\:pt-12 {
     @media (width >= 80rem) {
       padding-top: calc(var(--spacing) * 12);
@@ -1111,14 +1166,34 @@
       padding-top: 70px;
     }
   }
+  .xl\:pt-\[80px\] {
+    @media (width >= 80rem) {
+      padding-top: 80px;
+    }
+  }
+  .xl\:pr-6 {
+    @media (width >= 80rem) {
+      padding-right: calc(var(--spacing) * 6);
+    }
+  }
   .xl\:pb-0 {
     @media (width >= 80rem) {
       padding-bottom: calc(var(--spacing) * 0);
     }
   }
+  .xl\:pb-\[90px\] {
+    @media (width >= 80rem) {
+      padding-bottom: 90px;
+    }
+  }
   .xl\:text-left {
     @media (width >= 80rem) {
       text-align: left;
+    }
+  }
+  .xl\:text-\[17px\] {
+    @media (width >= 80rem) {
+      font-size: 17px;
     }
   }
   .xl\:text-\[26px\] {
